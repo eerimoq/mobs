@@ -1,4 +1,4 @@
-![https://apps.apple.com/app/id6466745933](https://github.com/eerimoq/moblin/raw/main/docs/app-store.svg)
+[<img src="docs/app-store.svg">](https://apps.apple.com/app/id6466745933)
 
 # Moblin - IRL Streaming
 
