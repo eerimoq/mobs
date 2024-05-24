@@ -1,5 +1,7 @@
 [<img src="docs/app-store.svg">](https://apps.apple.com/app/id6466745933)
 
+<a href="https://apps.apple.com/app/id6466745933"><img alt='Download on the App Store' height="85" src="./docs/app-store.svg"></a>
+
 # Moblin - IRL Streaming
 
 A free iOS app for IRL streaming. Mainly targeting [Twitch](https://twitch.tv), but can
