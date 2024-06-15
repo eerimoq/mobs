@@ -8,12 +8,14 @@ struct StreamVideoSettingsView: View {
         stream.resolution = SettingsStreamResolution(rawValue: resolution)!
         model.storeAndReloadStreamIfEnabled(stream: stream)
         model.resetSelectedScene(changeScene: false)
+        model.updateOrientation()
     }
 
     private func onFpsChange(fps: String) {
         stream.fps = Int(fps)!
         model.storeAndReloadStreamIfEnabled(stream: stream)
         model.resetSelectedScene(changeScene: false)
+        model.updateOrientation()
     }
 
     private func onCodecChange(codec: String) {
@@ -30,6 +32,7 @@ struct StreamVideoSettingsView: View {
         }
         stream.maxKeyFrameInterval = interval
         model.storeAndReloadStreamIfEnabled(stream: stream)
+        model.updateOrientation()
     }
 
     var body: some View {

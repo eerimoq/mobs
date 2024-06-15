@@ -1286,7 +1286,7 @@ final class Model: NSObject, ObservableObject {
                 let isLastMic = (currentMic.id == micId)
                 handleRtmpServerPublishStop(streamKey: stream.streamKey)
                 handleRtmpServerPublishStart(streamKey: stream.streamKey)
-                if currentMic.id != micId, isLastMic {
+                if isLastMic {
                     setMic(id: micId) {}
                 }
             }

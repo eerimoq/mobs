@@ -111,8 +111,9 @@ private class ReplaceAudio {
                 continue
             }
             let presentationTimeStamp = replaceSampleBuffer.presentationTimeStamp.seconds
+            let duration = replaceSampleBuffer.duration.seconds
             if firstPresentationTimeStamp.isNaN {
-                firstPresentationTimeStamp = realPresentationTimeStamp
+                firstPresentationTimeStamp = realPresentationTimeStamp - presentationTimeStamp + 0.04
             }
             if firstPresentationTimeStamp + presentationTimeStamp + latency >
                 realPresentationTimeStamp
